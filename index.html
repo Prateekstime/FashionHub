@@ -4,9 +4,8 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Fashionista</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
           <link rel="stylesheet" href="sytle.css" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iQz7JC3ecv6DxurvfnH7TOQVKG2a5M5t9ti7Ff5q6jXYB9If+Jpxu5TpG" crossorigin="anonymous"/>
-
 
 </head>
 
@@ -15,21 +14,26 @@
   <section id="header">
     <a href="#"><img src="./imgs/logo.png" id="nav-logo" alt="logo"></a>
           <div>
-            <ul id="navbar"><h5></h5>
-              <li><textarea name="search-text" id="search-bar" cols="30" rows="2"></textarea><button>search</button></li>
-               <li><a href="index.html">home</a></li>
-               <li><a href="shop.html">Shop</a></li>
-               
-               <li><a href="blog.html">Blog</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a></li>
+            <ul id="navbar">
+              
+              <li><textarea name="search-text" id="search-bar" cols="30" rows="2"></textarea></li>
+              <li><a href="index.html">home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              
             </ul>
+          </div>
+          <div id="mobile">
+            <i class="fa fa-outdent" ></i>
+            <a href="contact.html"><i class="fa-regular fa-cart-shopping"></i></a>
+
           </div>
     </section> 
   <section id="hero">
-    <div id="hero-logo"><img src="./imgs/hero4.png" alt=""></div>
-  <div hero-offer-text>
+    
+  <div id="hero-offer-text">
      <h4>Trade-in-offer</h4>
     <h2>Super value deals</h2>
     <h1>on all products</h1>
@@ -38,16 +42,16 @@
   </div>
 
   </section>
-  <section class="div-card-container">  
-      <div class="shipping" ><img src="./imgs/free shipping.png" id="logo-shipping" alt="free shipping"><a href="Shipping.html"></a><h5>Free Shipping</h5>
+  <section class="div-card-container" id="div-card-container">  
+      <div class="shipping" id="card-view" ><img src="./imgs/free shipping.png" id="logo-shipping" alt="free shipping"><a href="Shipping.html"></a><h5>Free Shipping</h5>
       </div>
-      <div class="online-order" ><img src="./imgs/online ordercom.png" alt=""><a href="online-order.html"></a><h5>Online Order </h5>   
+      <div class="online-order"  id="card-view"><img src="./imgs/online ordercom.png" alt=""><a href="online-order.html"></a><h5>Online Order </h5>   
       </div>
-      <div class="Save-money" ><img src="./imgs/save money.png" alt=""><a href="save-money.html"></a><h5>Online Order </h5>
+      <div class="Save-money" id="card-view" ><img src="./imgs/save money.png" alt=""><a href="save-money.html"></a><h5>Online Order </h5>
       </div>
-      <div class="Promotion" ><img src="./imgs/promotion logo.png" alt=""><a href="Promotion.html"></a><h5>Promotion</h5>      
+      <div class="Promotion" id="card-view"><img src="./imgs/promotion logo.png" alt=""><a href="Promotion.html"></a><h5>Promotion</h5>      
       </div>
-      <div class="sevice-support" ><img src="./imgs/support logo.png" alt=""><a href="Promotion.html"></a><h5>Promotion </h5>     
+      <div class="sevice-support" id="card-view" ><img src="./imgs/support logo.png" alt=""><a href="Promotion.html"></a><h5>Promotion </h5>     
       </div>
     </section>
     <section id="product" class="section-p1">
@@ -59,6 +63,13 @@
               <div class="des">
             <span>adidas</span>
             <h5>HELLO Summer T-shirts </h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
             <h4>$79</h4>
               </div>
              </div>
@@ -67,7 +78,13 @@
             <div class="des">
               <span>adidas</span>
               <h5>HELLO Summer T-shirts </h5>
-              
+             <div class="star">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+             </div>
               <h4>$74</h4>
             </div>
               </div>
@@ -76,6 +93,14 @@
               <div class="des">
                 <span>adidas</span>
                 <h5>HELLO Summer T-shirts </h5>
+               
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
                 <h4>$73</h4>
               </div>
               </div>
@@ -84,6 +109,13 @@
                 <div class="des">
                   <span>adidas</span>
                   <h5>HELLO Summer T-shirts </h5>
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
                  <h4>$75</h4>
                 </div>
               </div>
@@ -92,6 +124,13 @@
                   <div class="des">
                     <span>adidas</span>
                     <h5>HELLO Summer T-shirts </h5>
+                    <div class="star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
                     <h4>$77</h4>
                   </div>
               </div>
@@ -100,7 +139,13 @@
                     <div class="des">
                       <span>adidas</span>
                       <h5>HELLO Summer T-shirts </h5>
-                     
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
                       <h4>$76</h4>
                     </div>
               </div>
@@ -108,8 +153,13 @@
                       <img src="./imgs/f1.png" alt="T-shirt">
                       <div class="des">
                         <span>adidas</span>
-                        <h5>HELLO Summer T-shirts </h5>
-                       
+                        <h5>HELLO Summer T-shirts </h5><div class="star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>                       
                         <h4>$78</h4>
                      </div>
 
@@ -125,12 +175,19 @@
         <h1>New Arrival</h1>
         <h4>The Winter collection is available soon..</h4>
       </div>
-      <div class="pro-container">
+      <div class="pro-container" id="pro-container">
         <div class="pro">
           <img src="./imgs/f1.png" alt="T-shirt">
               <div class="des">
             <span>JOCKEY</span>
             <h5>HELLO Winter T-shirts </h5>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
             <h4>$79</h4>
               </div>
              </div>
@@ -139,7 +196,13 @@
             <div class="des">
               <span>adidas</span>
               <h5>HELLO Summer T-shirts </h5>
-              
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>              
               <h4>$74</h4>
             </div>
               </div>
@@ -148,6 +211,13 @@
               <div class="des">
                 <span>adidas</span>
                 <h5>HELLO Summer T-shirts </h5>
+                <div class="star">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
                 <h4>$73</h4>
               </div>
               </div>
@@ -156,6 +226,13 @@
                 <div class="des">
                   <span>adidas</span>
                   <h5>HELLO Summer T-shirts </h5>
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
                  <h4>$75</h4>
                 </div>
               </div>
@@ -164,6 +241,13 @@
                   <div class="des">
                     <span>adidas</span>
                     <h5>HELLO Summer T-shirts </h5>
+                    <div class="star">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
                     <h4>$77</h4>
                   </div>
               </div>
@@ -172,7 +256,13 @@
                     <div class="des">
                       <span>adidas</span>
                       <h5>HELLO Summer T-shirts </h5>
-                     
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
                       <h4>$76</h4>
                     </div>
               </div>
@@ -181,38 +271,76 @@
                       <div class="des">
                         <span>adidas</span>
                         <h5>HELLO Summer T-shirts </h5>
+                        <div class="star">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
                         <h4>$78</h4>
                      </div>
 
               </div>
     </section>
     <section id="collection-banner" class="section-k1">
-      <div id="offer">
+      <div id="banner-box">
         <h3>Spring/Summer</h3>
         <h2>Uppcomming season</h2>
         <h4>The best classic dresses is on sale at Fashionista</h4>
-        <button>Coolection</button>
+        <button class="white">Collection</button>
       </div>
-      <div id="cozy-deals">
+      <div id="banner-box">
         <h3>cozy deals</h3>
         <h2>Buy 1 Get 1 free</h2>
         <h4>The best classic dresses is on sale at Fashionista</h4>
-        <button>Learn More</button>
-      </div>
-      <div id="new-footwear-collection">
-        <h2>NEW FOOTWEAR COLLECTION</h2>
+        <button class="white">Learn More</button>
+        </div>
+      <div id="banner-box">
+        <h2>NEW FOOTWEAR </h2>
         <h3>Spring/Summer 2024</h3>
-        <button>Learn More</button>
+        <button class="white">Learn More</button>
       </div>
-      <div id="t-shirt">
-        <h2>T-SHIRTS</h2>
+      <div id="banner-box">
+          <h2>T-SHIRTS</h2>
         <h3>New Trendy Prints</h3>
-        <button>Learn More</button>
+        <button class="white">Learn More</button>
       </div>
-      <div id="season-sale">
-        <h2>SEASON SALE</h2>
+      <div id="banner-box"><h2>SEASON SALE</h2>
         <h3>Winter Collection is 50% OFF</h3>
-        <button>Learn More</button>
+        <button class="white">Learn More</button>
+    </div>
+    </section>
+    <section class="form" >
+      <div id="signup-banner">
+        <div><h3>Sign Up for Newsletter</h3>
+        <h5>Get E-mail updates about our lates shop and special offers</h5>
+      </div>
+      <div id="fill-form"><textarea name="" id="fill-form-text" cols="30" rows="10"></textarea>
+      <button>Sign Up</button></div>
+      </div>
+      <div class="template">
+        
+        
+        <div class="contact-us" id="contact-us">
+          <h3>Fashionista</h3>
+        <h5>Address: <p class="info">this is my address</p></h5>
+        <h5>Email: <p class="info">this is my address</p></h5>
+        <h4>Working hours:<p class="info"> 10:00 AM-6:00PM</p></h4>
+        <h4>Follow us</h4>
+        </div>
+        <div id="about-us">
+          <h4>About</h4>
+          <h5>Delivery Information</h5>
+          <h5>Privacy Policy</h5>
+          <h5>Terms & Conditions</h5>
+          <h5>Contact Us</h5>
+        </div>
+          <div id="about-app">
+          <h4>Install App</h4>
+          <h6>From App Store or Google Play</h6>
+          
+        </div>
       </div>
     </section>
   </div>

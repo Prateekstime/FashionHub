@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2family=Spartan:wght@100;200;300;400;500;600;700;800;900display=swap');
 * {
-       margin: 0;
-       padding: 0;
-       box-sizing: boreder-box;
+
        font-family: 'Spartan',sans-serif;
 }
 h1{
@@ -35,22 +33,62 @@ h6{
 #div-container{
        display: flex;
        flex-direction: column;
-       width: fit-content;
+       width: 100%;
       
 }
 .section-p1{
-          margin: 0px 0;
+        
           width: 100%;
+}
+p.info{
+      color: #4d4d4d;
+      size: 10px;
+      font-size: small;
+}
+.star{
+       color: #eee429;
+}
+
+button.normal{
+       font-size: 14px;
+       font-weight: 600px;
+       padding: 15px 30px;
+       color: #1a1a1a;
+       background-color: #ffffff;
+       cursor: pointer;
+       border: none;
+       outline: none;
+       transition: 0.2s;
+}
+
+button.white{
+       font-size: 13px;
+       font-weight: 600px;
+       padding: 11px 28px;
+       color: #ffffff;
+       background-color: transparent;
+       cursor: pointer;
+       border: 1px solid #ffffff;
+       outline: none;
+       transition: 0.2s;
+}
+#cart{
+       
+       width: max-content;
+       height: max-content;
+       
 }
 body{
           width: 100%;
+          margin: 0px 0px;
 }
 #header{
        width: 100%;
-       display: flex;   
+       display: flex;
+       flex-wrap: wrap;   
        align-items: center;
        justify-content: space-between;
-       padding: 0 50px;
+       padding: 0 0px;
        background-color: #3081D0;
        box-shadow: 5px 10px 45px rgba(74, 70, 70, 0);
        z-index: 999;
@@ -61,20 +99,38 @@ body{
        
 }
 #navbar{
-       width: 100%;
-       display: flex; 
+       padding-right: 20px;
+       display: flex;
+       flex-wrap: wrap; 
        align-items: center;
        justify-content: center;
+}
+#search-bar{ 
+       background-color: #d0d0d0;
+       border-radius: 10px;
+       border: none;
+}
+
+#navbar button{
+       background-color: #00bbff;
+       border: none;
+       border-radius: 10px;
+       margin-left: -105px;
 }
 #navbar li{
        display: flex;
        align-items: center;
        justify-content: center;
-       padding: 10px;
        font-size: large;
        font-weight: 400;
-       font: bold;
+       margin-right: 10px;
+
 }
+#mobile{
+       display: none;
+       align-items: center;
+   }
+
 
 #navbar li a{
        text-decoration: none;
@@ -109,22 +165,45 @@ body{
 /* Home Page*/
 
 #hero{
-      display: flex;
+       background-image: url("imgs/hero4.png");
+       display: flex;
        background-color: #6DB9EF;
-       height: 130vh;
+       height: max-content;
+       background-position: center;
+       background-size: contain;
        width: 100%;
-       background-size: cover;
-       background-position: top 105% right 0;
-       padding: 80px;
-       justify-items: center;       
+       background-repeat: no-repeat;
+       justify-items: center;
+         
+}
+#hero h4{
+       padding: 0px 0px;
+       margin: 0px 0px;
+       text-align: start;
+}
+#hero h2{
+       padding: 0px 0px;
+       margin: 0px 0px;
+       text-align: start;
+}
+#hero h1{
+       padding: 0px 0px;
+       margin: 0px 0px;
+       text-align: start;
+}
+#hero-offer-text{
+       
+       padding: 0px 50px;
+       margin: 0px 0px;
+       text-align: left;
+             
 }
 #hero button{
-       background-color: transparent;
-       background-image: url("imgs/shop-logo\ button.png button.png");
+       background-color: transparent; 
        color: #663a96;
        padding: 14px 50px;
        border: 0;
-       
+       margin-bottom: 100px;
        cursor: pointer;
        font-weight: 700;
        font-size: 25px;
@@ -132,18 +211,21 @@ body{
 }
 
 #hero h1{
+     
        color: rgb(218, 18, 111);
 }
 /* -----------------------------card view--------------------------------------------*/
 
 
-.div-card-container{
+#div-card-container{
        display: flex;
+       flex-direction: row;
        width: 100%;
+       height: fit-content;
        text-align: center;
-       padding: 100px 50px;
-       justify-content: space-around;
-       margin: auto;      
+       padding: 50px 0px;
+       margin: auto ;
+       justify-content: space-between;  
        
 }
 .shipping{
@@ -166,11 +248,8 @@ body{
        width: 120px;
        display: flex;
        flex-direction: column; 
-       position: center; 
        box-shadow: 2px 1px 35px;
-       border-radius: 10%;     
-       margin-right: 50px;
-       border: 1px salmon;
+       border-radius: 10%;
 }
 .online-order:hover{
        box-shadow: 2px 5px 55px;
@@ -183,8 +262,6 @@ body{
        flex-direction: column; 
        box-shadow: 2px 1px 35px;
        border-radius: 10%;
-       padding-right: 10px;
-       margin-right: 50px;
 }
 .Save-money:hover{
        box-shadow: 2px 5px 55px;
@@ -195,7 +272,7 @@ body{
        height: 130px;
        width: 120px;
        display: flex;
-       flex-direction: column;
+       flex-direction: column; 
        box-shadow: 2px 1px 35px;
        border-radius: 10%;
    
@@ -208,9 +285,8 @@ body{
        height: 130px;
        width: 120px;
        display: flex;
-       flex-direction: column;
+       flex-direction: column; 
        box-shadow: 2px 1px 35px;
-       margin-left: 50px;
        border-radius: 10%;
 }
 .sevice-support:hover{
@@ -225,12 +301,15 @@ body{
        
 }
 #product h2{
-      
        background-color: #096ab4;
-       margin: 10px 35%;
-       border-radius: 10px;
-       box-shadow: 10px 10px 20px rgb(0,0,0,0.2);
+       color: #ffffff;
+       width: 100%;
+       padding: 50px 60px 50px;
+       height: 80px;
+       box-shadow: 10px 10px 20px #444444;
        transition: 0.3s;
+       
+       
 }
 #product h2:hover{
        color: #1c2460;
@@ -250,20 +329,18 @@ body{
        display: flex;
        flex-direction: column;
        height: fit-content;
-       width: 20%;
-       min-width: 250px;
-       align-items: center;
-       justify-items: 50px;
+       min-width: 280px;
+       justify-items: left;
        border: 1px solid #cce7d0;
        padding: 10px 10px;
-       margin: 20px;
+       margin: 20px 15px;
        border-radius: 10px;
        cursor: pointer;
        background-color: #ffffff;
 }
 #product .pro img{
        width: 100%;
-       height: 50vh;
+       height: 40vh;
        border-radius: 20px;
        background-color: #cce7d0;
        box-shadow: 10px 10px 100px rgb(0,0,0,0.2);
@@ -275,11 +352,23 @@ body{
 }
 #product .pro .des{
        color: #606063;
-       font-size: 12px;
+       font-size: 20px;
+       font-weight: 700;
        text-align: left;
        
+       
 }
-#product .pro .des h5{ font-size: 12px;}
+#product .pro .des h5{
+        font-size: 15px;
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 20px; }
+#product .pro h4{
+       margin-top: 0px;
+       padding-top: 0px;
+       height: 20px;  
+}
+
 /* section ------------NEW ARRIVAL-------------------*/
 #new-arrival-product{
        text-align: center;
@@ -290,7 +379,7 @@ body{
        background-color: #096ab4;
 }
 #banner{
-       padding: 23px;
+       
        background-image: url("imgs/new\ arival\ logo.png");
        width: 100%;
 }
@@ -308,7 +397,8 @@ body{
 #banner .h2 .span{
        color: #663a96;
 }
-#banner button:hover{ box-shadow: 1px 30px 100px 20px #92a8ff;
+#banner button:hover{
+        box-shadow: 1px 30px 100px 20px #92a8ff;
 }
 #new-arrival-product h1{
        margin: 30px;
@@ -347,20 +437,19 @@ body{
        display: flex;
        flex-direction: column;
        height: fit-content;
-       width: 20%;
-       min-width: 250px;
-       align-items: center;
-       justify-items: 50px;
+       min-width: 280px;
+       justify-items: left;
        border: 1px solid #cce7d0;
        padding: 10px 10px;
-       margin: 20px;
+       margin: 20px 15px;
        border-radius: 10px;
        cursor: pointer;
        background-color: #ffffff;
+
 }
 #new-arrival-product .pro img{
        width: 100%;
-       height: 50vh;
+       height: 40vh;
        border-radius: 20px;
        background-color: #d3d3d3;
        box-shadow: 10px 10px 100px rgb(0,0,0,0.2);
@@ -373,15 +462,25 @@ body{
 #new-arrival-product .pro .des{
        color: #606063;
        justify-content: left;
-       font-size: 12px;
-       padding-top: 10px;
-       margin-right: 60%;
+       font-size: 10px;
+       justify-items: left;
+       align-items: flex-start;
        text-align: left;
        
 }
 #new-arrival-product .pro .des h5{ 
        font-size: 12px;
+       margin-top: 0px;
+       padding-top: 0px;
+       height: 20px; 
 }
+#new-arrival-product .pro .des h4{ 
+       font-size: 25px;
+       margin-top: 0px;
+       padding-top: -20px;
+       height: 34px; 
+}
+
 /*---------collection banner----------*/
 #collection-banner{
        align-items: center;
@@ -392,31 +491,338 @@ body{
 }
 #offer{
        background-color: #cce7d0;
-       padding: 30px 20px;
        margin: 30px 30px;
-       border-radius: 20px;
+       border-radius: 30px;
+       display: flex;
+       flex-wrap: wrap;
+       height: fit-content;
+       
 }
-#cozy-deals{
-       background-color: #e1ff74;
-       padding: 30px 20px;
-       margin: 30px 30px;
-       border-radius: 20px;
+#offer img{
+
+       height: 500px;
+       margin-right: -5%;
+       
 }
-#new-footwear-collection{
-       background-color: #f8ca22;
-       padding: 30px 20px;
+#banner-box{
+       background-image: url("imgs/buy-one-get\ post.png");
+       background-color: #db0000;
+       background-size: 40%;
+       background-repeat: no-repeat;
+       background-position: right top;
        margin: 30px 30px;
+       width: 580px;
+       height: max-content;
        border-radius: 20px;
+       display: flex;
+       flex-direction: column;
+       
 }
-#t-shirt{
-       background-color: #00bbff;
-       padding: 30px 20px;
-       margin: 30px 30px;
-       border-radius: 20px;
+#banner-box h2{
+       color: #ffffff;
+       text-align: left;
+       margin: 10% 20px;
+       height: 40px;
+       font-weight: 800px;
+       margin-bottom: 0%;
+              
 }
-#season-sale{
-       background-color: #ff6d6d;
-       padding: 30px 20px;
-       margin: 30px 30px;
-       border-radius: 20px;
+#banner-box h3{
+       color: #ffffff;
+       text-align: left;
+       margin : 30px 20px;
+       font-weight: 600;
+       height: 40px;
+                   
+}
+#banner-box h4{
+       color: #ffffff;
+       text-align: left;
+       margin : 30px 20px;
+       height: 20px;
+       font-weight: 600;
+       margin-bottom: 10%;
+                   
+}
+#banner-box button{
+       background-color: #db0000;
+       width: fit-content;
+       align-self: flex-start;
+       margin: 20px 30px;
+       height: 35px;
+       color: #ffffff;
+       padding: 10px 20px;
+       border-color: #c1c1c1;
+       border-width: 1px;
+}
+
+#banner-box:hover button{
+       background-color: #088178;
+       border: 1px solid #088178;;
+}
+.form{
+       width: 100%;
+
+}
+#signup-banner{
+       background-color: #1c2460;
+       display: flex;
+}
+#signup-banner h3{
+       color: #ffffff;
+       margin: 10px 30px;
+}
+#signup-banner h5{
+       color: #8e8e8e;
+       margin: 10px 30px;
+}
+#fill-form{
+       display: flex;
+       flex-direction: column;
+
+}
+#fill-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    
+   
+}
+
+#fill-form-text {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #003bc4;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.template{
+       width: 100%;
+       height: 50vh;
+       display: flex;
+       text-align: left;
+       justify-content: space-around;   
+       background-color: #b5b5b5;
+      
+      }
+.template .contact-us{
+       margin-top: 100px;
+       width: 100%;
+       display: flex;
+       justify-content: center top;
+       flex-direction: column;
+       text-align: left;   
+
+}
+.template #about-us{
+       margin-top: 100px;
+       width: 100%;
+       display: flex;
+       justify-content: center top;
+       flex-direction: column;
+       text-align: left;  
+}
+.template #about-app{
+       margin-top: 100px;
+       width: 100%;
+       display: flex;
+       justify-content: center top;
+       flex-direction: column;
+       text-align: left;  
+}
+.template h4{
+       display: flex;
+       margin: 0px 0px;
+       padding: 0 0px;
+}
+
+.template h3{
+       margin-right: 1000% ;
+       padding: 0 0px;
+}
+.template #contact-us h5{
+       margin: 0% ;
+       padding: 0 0px;
+}
+#pro-container .pro h4{
+       color: #1a1a1a;
+       margin: 0px 0px 0px 0px;
+       padding:  0px 0px 0px 0px;
+}
+
+/*-----------meadia quarry-----------*/
+
+@media (max-width:799px) {
+       #navbar {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              position: fixed;
+              top: 0;
+              right: -300px;
+              height: 100vh;
+              width: 250px;
+              background-color: #f1f1f1;
+              box-shadow: 0 49px 60px rgb(0,0,0,0.1);
+              padding: 50px 0 0 20px ;
+              transition: 0.4s;
+       
+          }
+          #navbar:hover{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              position: fixed;
+              top: 0;
+              right: 0px;
+              height: 100vh;
+              width: 250px;
+              background-color: #f1f1f1;
+              box-shadow: 0 49px 60px rgb(0,0,0,0.1);
+              padding: 50px 0 0 20px;
+
+       
+          }
+          #navbar li{
+              margin-bottom: 30px;
+          }
+          #mobile{
+              display: flex;
+              
+              margin-right: 20px;
+              align-items: center;
+          }
+          #hero {
+              background-image: url("imgs/hero4.png");
+              display: flex;
+              background-color: #6DB9EF;
+              height: min-content;
+              background-position: center;
+              background-size: contain;
+              width: 100%;
+              background-repeat: no-repeat;
+              justify-items: center;
+          }
+          #hero-offer-text {
+              justify-content: left;
+              padding: 0px 20px;
+              margin: 20px 0px;
+              text-align: left;
+              
+          }
+          #div-card-container {
+              display: flex;
+              flex-wrap: wrap;
+              width: 90%;
+              text-align: center;
+              padding: 80px 20px 20px 20px;
+              justify-items: center;
+              justify-content: space-around;
+              
+          }
+          #card-view{
+              margin-bottom: 40px;
+          }
+         
+          #product h2 {
+              background-color: #096ab4;
+              color: #ffffff;
+              width: 100%;
+              padding-right: 0%;
+              padding-left: 0px;
+              height: 80px;
+              box-shadow: 10px 10px 20px #444444;
+              transition: 0.3s;
+          }
+          #product .pro-container {
+              display: flex;
+              justify-content: space-around;
+              height: fit-content;
+              width:100%;
+              flex-wrap: wrap;
+              background-color: #F4F27E;
+          }
+          #product .pro {
+              display: flex;
+              flex-direction: column;
+              height: fit-content;
+              min-width: 250px;
+              width: 300px;
+              justify-items: left;
+              border: 1px solid #cce7d0;
+              padding: 10px 10px;
+              margin: 20px 15px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color: #ffffff;
+          }
+          #banner {
+              background-image: url("imgs/new\ arival\ logo.png");
+              width: 100%;
+              height: 30vh;
+          }
+          h3 {
+              display: block;
+              font-size: 20px;
+              font-weight: 900;
+              margin-bottom: 0%;
+          }
+          h2 {
+              font-size: 50px;
+              line-height: 65px;
+              margin-top: 0%;
+              margin-bottom: 0%;
+              color: black;
+          }
+          #banner button {
+              padding: 15px 40px;
+              background-color: #ff2595;
+              color: #1c2460;
+              font-size: large;
+              font-style: oblique;
+              box-shadow: 1px 30px 100px 20px #558cfa;
+              border-radius: 10px;
+              border: none;
+              margin-top: 0%;
+              margin-bottom: 0%;
+          }
+          #new-arrival-product .pro-container {
+              display: flex;
+              justify-content: space-around;
+              height: fit-content;
+              width:100%;
+              flex-wrap: wrap;
+              background-color: #F4F27E;
+          }
+          #new-arrival-product .pro {
+              display: flex;
+              flex-direction: column;
+              height: fit-content;
+              min-width: 250px;
+              width: 300px;
+              justify-items: left;
+              border: 1px solid #cce7d0;
+              padding: 10px 10px;
+              margin: 20px 15px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color: #ffffff;
+          }
+
+          
+       
 }
